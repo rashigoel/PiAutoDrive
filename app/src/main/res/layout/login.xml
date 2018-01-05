@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/layout_bg"
+            android:layout_marginTop="100sp"
+            android:layout_marginLeft="40sp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textColor="#E91E63"
+                android:textSize="40dp"
+                android:layout_marginLeft="5sp"
+                android:textStyle="bold"
+                android:id="@+id/login"/>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000000"
+                android:alpha="0.5"
+                android:id="@+id/uusername"
+                android:layout_below="@+id/login"
+                android:layout_marginTop="20sp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/loginemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:layout_marginBottom="10dp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:textSize="30dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000000"
+                android:id="@+id/pass"
+                android:alpha="0.5"
+                android:layout_below="@+id/uusername">
+
+                <AutoCompleteTextView
+                    android:id="@+id/loginpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:layout_marginBottom="10dp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:textSize="30dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GO"
+                android:background="@drawable/border"
+                android:alpha="0.5"
+                android:id="@+id/go"
+                android:layout_below="@+id/pass"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20sp"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot your Password ?"
+                android:layout_below="@+id/go"
+                android:layout_marginTop="15dp"
+                android:layout_centerInParent="true"
+                android:alpha="0.4"/>
+
+
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/line"
+            android:layout_marginTop="110dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-35dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

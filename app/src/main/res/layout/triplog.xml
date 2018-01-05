@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <!--<android.support.design.widget.AppBarLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/upper">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:id="@+id/miles"
+            android:textSize="@dimen/values"
+            android:textColor="#ffffff"
+            android:paddingTop="30dp"
+            android:paddingLeft="40dp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MILES"
+            android:layout_below="@+id/miles"
+            android:textSize="@dimen/tags"
+            android:paddingLeft="40dp"
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:id="@+id/textView3"
+            android:layout_alignParentLeft="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/hourvalue"
+                android:textSize="@dimen/values"
+                android:textColor="#ffffff"
+                android:paddingTop="10dp"
+                android:paddingLeft="40dp"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOURS"
+                android:layout_below="@+id/hourvalue"
+                android:textSize="@dimen/tags"
+                android:paddingLeft="40dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ffffff"
+                android:id="@+id/textView4"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:id="@+id/mpg"
+            android:textSize="@dimen/values"
+            android:textColor="#ffffff"
+            android:paddingTop="30dp"
+            android:paddingRight="60dp"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FUEL"
+            android:id="@+id/m"
+            android:textSize="@dimen/tags"
+            android:textColor="#ffffff"
+            android:paddingRight="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mpg"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:id="@+id/kmplvalue"
+                android:textSize="@dimen/values"
+                android:textColor="#ffffff"
+                android:paddingTop="10dp"
+                android:paddingRight="60dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MPG"
+                android:layout_below="@+id/kmplvalue"
+                android:textSize="@dimen/tags"
+                android:paddingRight="60dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ffffff"
+                android:id="@+id/textView5" />
+        </RelativeLayout>
+
+
+
+        <com.hookedonplay.decoviewlib.DecoView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            custom:dv_lineWidth="25dp"
+            android:id="@+id/dynamicArcView"
+            android:layout_width="match_parent"
+            android:padding="25dp"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+
+
+
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mainListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:scrollbars="none"
+        android:background="#ffffff"/>
+    </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">PI</string>
+    <string name="title_activity_main_page">MainPage</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_last_parked">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="order_id_mock" translatable="false"># 1234–5678</string>
+    <string name="price_mock" translatable="false">$25</string>
+    <string name="requests_count_mock" translatable="false">5</string>
+    <string name="requests_count_badge" translatable="false">REQUESTS</string>
+    <string name="weight_mock" translatable="false">50 oz</string>
+    <string name="weight_badge" translatable="false">WEIGHT</string>
+    <string name="pledge_mock" translatable="false">$150</string>
+    <string name="pledge_badge" translatable="false">PLEDGE</string>
+    <string name="sender_badge" translatable="false">SENDER</string>
+    <string name="client_name_mock" translatable="false">Edward Norton</string>
+    <string name="rating_mock" translatable="false">(26)</string>
+    <string name="from_badge" translatable="false">FROM</string>
+    <string name="to_badge" translatable="false">TO</string>
+    <string name="delivery_date_badge" translatable="false">DELIVERY DATE</string>
+    <string name="delivery_time_mock" translatable="false">6:30 pm</string>
+    <string name="delivery_date_mock" translatable="false">May 16, 2016</string>
+    <string name="deadline_badge" translatable="false">REQUEST DEADLINE</string>
+    <string name="deadline_time_mock" translatable="false">24 minutes</string>
+    <string name="request_btn_text" translatable="false">REQUEST</string>
+    <string name="btn_annotation_mock" translatable="false">5 people have sent a request</string>
+    <string name="content_from1_mock">W 90th St</string>
+    <string name="content_from2_mock">New York, NY 10025</string>
+    <string name="content_to1_mock">46th Ave</string>
+    <string name="content_to2_mock">Woodside, NY 11101</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_permissions">Requesting permissions was never easier.</string>
+    <string name="description_permissions">This app needs the camera and storage permission.\nIt\'s only to show how permission requests work in this library and we won\'t do anything with the granted permissions.</string>
+    <string name="label_grant_permissions">Please grant the permissions before proceeding.</string>
+
+    <string name="label_button_cta">Click me!</string>
+    <string name="toast_button_cta">Hey, that\'s how custom CTA buttons work in material-intro!</string>
+
+    <string name="title_fragment_login">This is a custom fragment.</string>
+    <string name="hint_fake_username">Fake username</string>
+    <string name="hint_fake_password">Fake password</string>
+    <string name="label_fake_login">Fake login</string>
+    <string name="label_fake_login_loading">Loading…</string>
+    <string name="label_fake_login_success">Logged in ☺</string>
+    <string name="label_fake_login_success_message">Successfully faked login.</string>
+    <string name="label_fill_out_form">Please fill out the form before proceeding.</string>
+
+    <string name="title_fragment_custom">Take off!</string>
+
+    <string name="label_activity_finish">Nothing here…\n…just a demo how to create a splash screen intro.</string>
+
+    <string name="title_canteen_intro1" translatable="false">Menus right on your screen</string>
+    <string name="title_canteen_intro2" translatable="false">Cash on delivery</string>
+    <string name="title_canteen_intro3" translatable="false">Choose what you like</string>
+    <string name="description_canteen_intro1" translatable="false">Looking for something to eat? Just browse the feed wherever you are.</string>
+    <string name="description_canteen_intro2" translatable="false">Order and we\'ll deliver the menu right in front of your door.</string>
+    <string name="description_canteen_intro3" translatable="false">Bookmark a menu you wanted to save and keep track of its status whether it\'s available or not.</string>
+    <string name="label_button_cta_canteen_intro" translatable="false">Get started</string>
+    <string name="title_activity_fab">Fab</string>
+</resources>
